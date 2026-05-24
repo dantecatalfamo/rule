@@ -18,6 +18,7 @@ let lineNumber;
 let repeats;
 
 function initRule(rule) {
+    console.log("rule", rule);
     maxLines = 1;
     lineNumber = 0;
     repeats = 0;
@@ -27,8 +28,7 @@ function initRule(rule) {
     }
 
     let hue = Math.floor((Math.random()  * 1000)%365);
-    containerEl.style.color = `hsl(${hue}, 20%, 50%)`;
-    ruleEl.style.color = `hsl(${hue}, 20%, 50%)`;
+    document.documentElement.style.setProperty("--color", `hsl(${hue}, 20%, 50%)`);
 
     const widthCh = Math.floor(getWidthInCh(auto));
     let init = new Array(widthCh).fill(unset);
