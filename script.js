@@ -11,7 +11,7 @@ const widthCh = getWidthInCh(auto);
 
 // const rule = 110;
 const rule = Math.floor(Math.random() * 1000 % 256);
-const set = "█";
+const set = "\u2588";
 const unset = " ";
 const len = Math.floor(widthCh);
 let maxlines = 1;
