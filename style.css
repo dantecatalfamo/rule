@@ -1,0 +1,25 @@
+#auto {
+    white-space: pre;
+    font-family: monospace, monospace;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#rule {
+    position: absolute;
+    background: white;
+    border: solid white 1px;
+    padding: 0px 4px;
+    font-family: monospace, monospace;
+    background-color: black;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: black;
+}
